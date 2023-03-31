@@ -1,0 +1,42 @@
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+  border-radius: 6px;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-overlay {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    min-width: 50%;
+    padding: 20px;
+    gap: 30px;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-animate {
+      animation: scale-in-out 0.2s;
+    }
+  }
+}
+
+@keyframes scale-in-out {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}

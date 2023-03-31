@@ -1,0 +1,41 @@
+.products {
+  &-table {
+    height: 50vh;
+    display: block;
+    overflow: scroll;
+    margin-bottom: 0;
+    position: relative;
+
+    &-dropdown {
+      display: none;
+      position: absolute;
+      background-color: white;
+      border: 1px solid #e1e1e1;
+      padding: 10px;
+      margin-top: -10px;
+      z-index: 1;
+      right: 0;
+    }
+
+    &-action:hover + &-dropdown,
+    &-dropdown:hover {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    & thead {
+      background-color: #eee;
+    }
+
+    & th:first-child,
+    td:first-child {
+      padding-left: 15px;
+    }
+
+    & tbody tr:hover {
+      background-color: rgba(0, 0, 0, 0.02);
+      transition: ease-in-out 0.1s;
+    }
+  }
+}

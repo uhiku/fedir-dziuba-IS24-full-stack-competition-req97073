@@ -1,9 +1,14 @@
-import "./app.styles.scss";
+import styles from "./app.module.scss";
 import { useAppHook } from "./app.hook";
 import { AppProps } from "./app.props";
 import { FC } from "react";
+import { Layout } from "../layout";
 
 export const App: FC<AppProps> = () => {
   useAppHook();
-  return <h1>App</h1>;
+  return (
+    <div className={styles.app}>
+      <Layout />
+    </div>
+  );
 };

@@ -1,0 +1,21 @@
+.manage-product {
+  &-error {
+    border-color: red !important; // skeleton fix
+  }
+
+  & button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &-developer {
+    position: relative;
+
+    &-remove {
+      position: absolute;
+      right: 15px;
+      top: 5px;
+      cursor: pointer;
+    }
+  }
+}
