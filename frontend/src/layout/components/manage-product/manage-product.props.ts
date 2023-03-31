@@ -9,5 +9,7 @@ export type ManageProductProps = {
     product: Omit<ProductModel, "productId">
   ) => Promise<void>;
 
+  handleClose: () => void;
+
   product?: ProductModel;
 };

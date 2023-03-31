@@ -39,6 +39,7 @@ export const Layout: FC<LayoutProps> = () => {
           product={selectedProduct}
           handleAddProduct={addProduct}
           handleEditProduct={editProduct}
+          handleClose={handleEditModal}
         />
       )}
     </>

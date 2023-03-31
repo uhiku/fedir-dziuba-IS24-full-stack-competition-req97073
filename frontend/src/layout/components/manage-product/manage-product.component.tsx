@@ -96,9 +96,14 @@ export const ManageProduct: FC<ManageProductProps> = (props) => {
               </div>
             </div>
 
-            <button className="button-primary" type="submit">
-              Submit
-            </button>
+            <div className={styles["manage-product-actions"]}>
+              <button type="button" onClick={() => props.handleClose()}>
+                Close
+              </button>
+              <button className="button-primary" type="submit">
+                Submit
+              </button>
+            </div>
           </Form>
         </FormikProvider>
       </div>
